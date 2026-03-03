@@ -23,4 +23,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: votre-username/mon-app:latest
+          tags: himmamg/mon-app:latest
