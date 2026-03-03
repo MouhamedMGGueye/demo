@@ -1,19 +1,17 @@
-name: Mon Premier Workflow
+name: Test Code Checkout
 
-on:
-  push:
-    branches: [ main ]
+on: [push]
 
 jobs:
-  hello-world:
+  build:
     runs-on: ubuntu-latest
     
     steps:
-      - name: Dire bonjour
-        run: echo "Hello, World! CI/CD avec GitHub Actions"
+      - name: Récupérer le code
+        uses: actions/checkout@v4
       
-      - name: Afficher la date
-        run: date
-      
-      - name: Lister les fichiers
+      - name: Lister les fichiers du projet
         run: ls -la
+      
+      - name: Afficher le contenu d'un fichier
+        run: cat README.md
