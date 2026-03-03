@@ -14,4 +14,4 @@ jobs:
         run: ls -la
       
       - name: Afficher le contenu d'un fichier
-        run: cat README.md
+        run: cat index.html
